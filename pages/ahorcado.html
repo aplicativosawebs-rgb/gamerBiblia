@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Ahorcado · Biblia Games</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-particles"></div>
+
+  <div class="game-container">
+    <div class="game-header glass">
+      <a href="../index.html" class="icon-btn"><span class="material-icons">arrow_back</span></a>
+      <h2>🔤 El Ahorcado</h2>
+      <div class="header-actions">
+        <button id="resetBtn" class="btn"><span class="material-icons">refresh</span>Reiniciar</button>
+      </div>
+    </div>
+
+    <div class="panel glass">
+      <div style="text-align:center;color:var(--text-muted);">
+        ❤️ Vidas: <strong id="lives">6</strong> · Puntos: <strong id="score">0</strong>
+      </div>
+      <div class="hangman-art" id="art">🟢</div>
+      <div class="hangman-display" id="word"></div>
+      <div class="hint-box" id="hint">💡 Pista</div>
+      <div class="keyboard" id="keyboard"></div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/ahorcado.js"></script>
+</body>
+</html>

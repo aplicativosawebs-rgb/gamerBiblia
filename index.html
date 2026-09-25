@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblia Games · Juegos Bíblicos Juveniles</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div class="bg-particles"></div>
+
+    <header class="topbar glass">
+        <div class="brand">
+            <img src="asset/favicon.png" alt="Biblia Games Logo" class="logo-img">
+            <!-- <span class="material-icons logo-icon">auto_stories</span> -->
+            <h1>Biblia Games</h1>
+        </div>
+        <div class="topbar-actions">
+            <button id="themeToggle" class="icon-btn glass" title="Modo claro/oscuro">
+                <span class="material-icons">dark_mode</span>
+            </button>
+            <a href="pages/estadisticas.html" class="icon-btn glass" title="Estadísticas">
+                <span class="material-icons">leaderboard</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero glass">
+            <h2 class="hero-title">¡Pon a prueba tu conocimiento bíblico!</h2>
+            <p class="hero-sub">6 juegos · Puntuación · Progreso guardado</p>
+            <div class="hero-stats">
+                <div class="stat-chip">
+                    <span class="material-icons">emoji_events</span>
+                    <span>Puntos totales: <strong id="totalScore">0</strong></span>
+                </div>
+                <div class="stat-chip">
+                    <span class="material-icons">verified</span>
+                    <span>Juegos completados: <strong id="completedGames">0/6</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="games-grid">
+            <a href="pages/personaje.html" class="game-card glass" data-game="personaje">
+                <div class="game-img"
+                    style="background-image:url('https://cdn.pixabay.com/photo/2017/06/22/20/33/quiz-2432440_1280.png')">
+                </div>
+                <div class="game-body">
+                    <span class="material-icons game-icon">person_search</span>
+                    <h3>Adivina el Personaje</h3>
+                    <p>Pistas progresivas · Múltiple opción</p>
+                    <span class="score-badge" id="score-personaje">0 pts</span>
+                </div>
+            </a>
+
+            <a href="pages/libro-emoji.html" class="game-card glass" data-game="libro-emoji">
+                <div class="game-img"
+                    style="background-image:url('https://static.guiainfantil.com/pictures/1013-dibujo-de-unos-libros-para-imprimir-y-colorear.jpg')">
+                </div>
+                <div class="game-body">
+                    <span class="material-icons game-icon">menu_book</span>
+                    <h3>Adivina qué Libro es</h3>
+                    <p>Pistas con emojis 🔥📖</p>
+                    <span class="score-badge" id="score-libro-emoji">0 pts</span>
+                </div>
+            </a>
+
+            <a href="pages/memoria.html" class="game-card glass" data-game="memoria">
+                <div class="game-img"
+                    style="background-image:url('https://screens.cdn.wordwall.net/400/9289ebdff1c140c68e059ae9c4161dba_65')">
+                </div>
+                <div class="game-body">
+                    <span class="material-icons game-icon">grid_view</span>
+                    <h3>Encuentra la Pareja</h3>
+                    <p>Memoria con libros bíblicos</p>
+                    <span class="score-badge" id="score-memoria">0 pts</span>
+                </div>
+            </a>
+
+            <a href="pages/ahorcado.html" class="game-card glass" data-game="ahorcado">
+                <div class="game-img"
+                    style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfxeF05OHDR0OfNXZ6dVmlf28EvUX4H5z0oWa7Eu6HQ3t2I_GOPqyaeM&s=10')">
+                </div>
+                <div class="game-body">
+                    <span class="material-icons game-icon">spellcheck</span>
+                    <h3>El Ahorcado</h3>
+                    <p>Palabras y conceptos bíblicos</p>
+                    <span class="score-badge" id="score-ahorcado">0 pts</span>
+                </div>
+            </a>
+
+            <a href="pages/timeline.html" class="game-card glass" data-game="timeline">
+                <div class="game-img"
+                    style="background-image:url('https://cdn-icons-png.flaticon.com/512/10301/10301356.png')"></div>
+                <div class="game-body">
+                    <span class="material-icons game-icon">timeline</span>
+                    <h3>Línea de Tiempo Bíblica</h3>
+                    <p>Ordena 5 eventos correctamente</p>
+                    <span class="score-badge" id="score-timeline">0 pts</span>
+                </div>
+            </a>
+
+            <a href="pages/codigo-secreto.html" class="game-card glass" data-game="codigo-secreto">
+                <div class="game-img"
+                    style="background-image:url('https://image.slidesharecdn.com/cdigosecretonivel1-170310084336/75/Codigo-secreto-nivel-1-4-2048.jpg')">
+                </div>
+                <div class="game-body">
+                    <span class="material-icons game-icon">lock</span>
+                    <h3>El Código Secreto</h3>
+                    <p>Libro · Capítulo · Versículo</p>
+                    <span class="score-badge" id="score-codigo-secreto">0 pts</span>
+                </div>
+            </a>
+        </section>
+
+        <section class="actions glass">
+            <button id="resetAll" class="btn danger">
+                <span class="material-icons">delete_forever</span>
+                Limpiar todo el progreso
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="asset/favicon.png" alt="Biblia Games Logo" class="logo-img">
+        <p> Biblia Games · Hecho con fe para jóvenes <br> Copyright © 2026 Biblia Games. Todos los derechos reservados.
+            GI Desarrollo</p>
+            <a href="https://ildergutierrez.github.io/portafolio/" target="_blank" rel="noopener noreferrer">
+             <img src="https://ildergutierrez.github.io/portafolio/assets/img/favicon.png" alt="Biblia Games Logo" class="logo-img">
+        </a>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

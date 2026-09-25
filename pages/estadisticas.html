@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas · Biblia Games</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-particles"></div>
+
+  <div class="game-container">
+    <div class="game-header glass">
+      <a href="../index.html" class="icon-btn"><span class="material-icons">arrow_back</span></a>
+      <h2>📊 Estadísticas</h2>
+      <div class="header-actions">
+        <button id="resetBtn" class="btn danger"><span class="material-icons">delete_forever</span>Limpiar</button>
+      </div>
+    </div>
+
+    <div class="panel glass">
+      <div class="stats-grid">
+        <div class="stat-card glass">
+          <div class="value" id="totalScore">0</div>
+          <div class="label">Puntos totales</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="value" id="completedCount">0/6</div>
+          <div class="label">Juegos completados</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="value" id="avgScore">0</div>
+          <div class="label">Promedio por juego</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel glass">
+      <h3 style="font-family:'EB Garamond',serif;margin-bottom:14px;">Puntuación por juego</h3>
+      <div id="progressList"></div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/estadisticas.js"></script>
+</body>
+</html>
