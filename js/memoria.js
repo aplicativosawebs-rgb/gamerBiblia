@@ -1,7 +1,14 @@
 (function() {
+  // 8 parejas = 16 cartas → grid 4x4
   const PAIRS = [
-    'Génesis', 'Éxodo', 'Salmos',
-    'Proverbios', 'Isaías', 'Mateo'
+    'Génesis',
+    'Éxodo',
+    'Salmos',
+    'Proverbios',
+    'Isaías',
+    'Mateo',
+    'Apocalipsis',
+    'Romanos'
   ];
 
   let cards = [], flipped = [], matched = 0, moves = 0, lock = false;
@@ -14,6 +21,9 @@
     feedback: document.getElementById('feedback')
   };
 
+  // Ajustar contador de parejas en el HTML dinámicamente
+  const totalPairs = PAIRS.length;
+
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -23,6 +33,15 @@
   }
 
   function init() {
+    // Actualizar el contador "/N" en el header de la página
+    const pairsEl = els.pairs.parentElement;
+    if (pairsEl) {
+      pairsEl.innerHTML = `Movimientos: <strong id="moves">0</strong> · Parejas: <strong id="pairs">0</strong>/${totalPairs} · Puntos: <strong id="score">0</strong>`;
+      els.moves = document.getElementById('moves');
+      els.pairs = document.getElementById('pairs');
+      els.score = document.getElementById('score');
+    }
+
     cards = shuffle([...PAIRS, ...PAIRS]);
     flipped = []; matched = 0; moves = 0; lock = false;
     els.moves.textContent = 0;
@@ -69,7 +88,7 @@
       els.pairs.textContent = matched;
       flipped = [];
       lock = false;
-      if (matched === PAIRS.length) win();
+      if (matched === totalPairs) win();
     } else {
       a.classList.add('shake');
       b.classList.add('shake');
@@ -83,9 +102,10 @@
   }
 
   function win() {
-    const base = 300;
-    const penalty = Math.max(0, (moves - PAIRS.length) * 10);
-    const score = Math.max(50, base - penalty);
+    // Puntaje: base 500, penaliza movimientos extra (mínimo ideal = 8 parejas + margen)
+    const ideal = totalPairs + 4; // 12 movimientos "perfectos"
+    const penalty = Math.max(0, (moves - ideal) * 8);
+    const score = Math.max(80, 500 - penalty);
     els.score.textContent = score;
     els.feedback.className = 'feedback ok show win-pulse';
     els.feedback.innerHTML = `
