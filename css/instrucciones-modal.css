@@ -1,0 +1,305 @@
+/* Estilos para Modal de Instrucciones */
+
+#modal-instrucciones {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+#modal-instrucciones.show {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-instrucciones-content {
+  background: var(--card-bg);
+  border-radius: 16px;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-out;
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+}
+
+.modal-header-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(var(--primary-rgb), 0.1);
+}
+
+.modal-header-close button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted-modal);
+  font-size: 1.5rem;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.modal-header-close button:hover {
+  background: rgba(var(--primary-rgb), 0.1);
+  color: var(--modal-text);
+}
+
+#modal-content {
+  padding: 24px;
+}
+
+.instrucciones-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.instrucciones-header h2 {
+  font-size: 1.8rem;
+  margin: 0 0 12px 0;
+  color: var(--modal-text);
+  font-weight: 700;
+}
+
+.instrucciones-desc {
+  color: var(--text-muted-modal);
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+}
+
+.instrucciones-meta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dificultad {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.dificultad.fácil {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2));
+  color: #10b981;
+}
+
+.dificultad.medio {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.2));
+  color: #f59e0b;
+}
+
+.dificultad.difícil {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.2));
+  color: #ef4444;
+}
+
+.max-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.2), rgba(var(--primary-rgb), 0.1));
+  color: var(--modal-text);
+}
+
+.instrucciones-body {
+  margin-bottom: 24px;
+}
+
+.instrucciones-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.instrucciones-list li {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(var(--primary-rgb), 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--modal-text);
+  transition: all 0.3s ease;
+}
+
+.instrucciones-list li::before {
+  content: counter(list-number);
+  counter-increment: list-number;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.instrucciones-list {
+  counter-reset: list-number;
+}
+
+.instrucciones-list li:hover {
+  background: rgba(var(--primary-rgb), 0.1);
+  transform: translateX(4px);
+}
+
+.instrucciones-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 16px;
+  border-top: 1px solid rgba(var(--primary-rgb), 0.1);
+}
+
+.instrucciones-footer .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#btn-instrucciones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  background: linear-gradient(135deg, var(--primary), #0891b2);
+  /* color: rgb(10, 10, 10); */
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+#btn-instrucciones:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(var(--primary-rgb), 0.3);
+}
+
+#btn-instrucciones:active {
+  transform: translateY(0);
+}
+
+#btn-instrucciones .material-icons {
+  font-size: 1.2rem;
+}
+
+/* Scrollbar personalizado para modal */
+.modal-instrucciones-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-instrucciones-content::-webkit-scrollbar-track {
+  background: rgba(var(--primary-rgb), 0.05);
+  border-radius: 8px;
+}
+
+.modal-instrucciones-content::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
+.modal-instrucciones-content::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .modal-instrucciones-content {
+    width: 95%;
+    max-height: 95vh;
+  }
+
+  #modal-content {
+    padding: 16px;
+  }
+
+  .instrucciones-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .instrucciones-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instrucciones-list li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .instrucciones-footer {
+    flex-direction: column;
+  }
+
+  .instrucciones-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Tema oscuro */
+@media (prefers-color-scheme: dark) {
+  #modal-instrucciones {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  .modal-instrucciones-content {
+    background: var(--card-bg);
+  }
+}

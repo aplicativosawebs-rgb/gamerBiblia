@@ -7,6 +7,7 @@
   <link rel="icon" href="../asset/favicon.png" type="image/png">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/games.css">
+  <link rel="stylesheet" href="../css/instrucciones-modal.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -22,6 +23,10 @@
         <button id="resetBtn" class="btn"><span class="material-icons">refresh</span>Reiniciar</button>
          <button id="themeToggle" class="icon-btn glass" title="Modo claro/oscuro">
                 <span class="material-icons">dark_mode</span>
+            </button>
+            <button id="btn-instrucciones" class="btn secondary" style="margin-bottom: 16px;">  
+                <span class="material-icons">help_outline</span>
+                Ayuda
             </button>
       </div>
     </div>
@@ -42,9 +47,20 @@
       </div>
     </div>
   </div>
-
+<!-- Modal de Instrucciones -->
+  <div id="modal-instrucciones" class="modal-instrucciones">
+    <div class="modal-instrucciones-content">
+      <div class="modal-header-close">
+        <button id="cerrar-modal" title="Cerrar">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div id="modal-content"></div>
+    </div>
+  </div>
   <script src="../js/storage.js"></script>
   <script src="../js/personaje.js"></script>
   <script src="../js/app.js"></script>
+  <script src="../js/instrucciones-modal.js"></script>
 </body>
 </html>

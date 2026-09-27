@@ -18,6 +18,7 @@
     applyTheme(next);
   });
 
+
   // Puntajes
   function refreshScores() {
     const games = ['personaje', 'libro-emoji', 'memoria', 'ahorcado', 'timeline', 'codigo-secreto'];
@@ -27,7 +28,7 @@
     });
     document.getElementById('totalScore').textContent = Storage.getTotal();
     document.getElementById('completedGames').textContent =
-      Storage.getCompletedCount() + '/6';
+      Storage.getCompletedCount() + '/9';
   }
 
   refreshScores();

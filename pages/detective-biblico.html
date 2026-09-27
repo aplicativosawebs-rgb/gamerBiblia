@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detective Bíblico · Biblia Games</title>
+  <link rel="icon" href="../asset/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <!-- En la sección <head> de tu página de juego -->
+  <link rel="stylesheet" href="../css/instrucciones-modal.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-particles"></div>
+
+  <div class="game-container">
+    <div class="game-header glass">
+      <a href="../index.html" class="icon-btn"><span class="material-icons">arrow_back</span></a>
+      <h2>🔍 Detective Bíblico</h2>
+      
+      <div class="header-actions">
+        <button id="resetBtn" class="btn"><span class="material-icons">refresh</span>Reiniciar</button>
+        <button id="themeToggle" class="icon-btn glass" title="Modo claro/oscuro">
+          <span class="material-icons">dark_mode</span>
+        </button>
+        <button id="btn-instrucciones" class="btn secondary" style="margin-bottom: 16px;">
+          <span class="material-icons">help_outline</span>
+          Ayuda
+        </button>
+      </div>
+    </div>
+
+    <div class="panel glass">
+      <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+      <div style="text-align:center; margin-bottom:16px; color:var(--text-muted);">
+        Caso <strong id="caseNum">1</strong> / <span id="caseTotal">5</span> · Puntos: <strong id="score">0</strong>
+      </div>
+
+      <div class="mystery-box" id="mysteryBox">
+        <div class="mystery-title">🔎 La Investigación</div>
+        <div class="clues-list" id="cluesList"></div>
+        <div class="clue-counter" id="clueCounter">
+          Pista <span id="clueNum">0</span> de 3 disponibles
+        </div>
+      </div>
+
+      <div class="detective-actions">
+        <button class="btn secondary" id="nextClueBtn">
+          <span class="material-icons">lightbulb</span>
+          Siguiente Pista
+        </button>
+        <button class="btn primary" id="solveBtn">
+          <span class="material-icons">done_all</span>
+          Resolver Caso
+        </button>
+      </div>
+
+      <div class="guess-section" id="guessSection" style="display:none;">
+        <input type="text" id="guessInput" placeholder="Ingresa tu respuesta..." class="guess-input">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; margin-top:12px;">
+          <button class="btn secondary" id="cancelGuessBtn">Cancelar</button>
+          <button class="btn primary" id="submitGuessBtn">Enviar Respuesta</button>
+        </div>
+      </div>
+
+      <div class="feedback" id="feedback"></div>
+      
+      <div style="text-align:center; margin-top:16px;">
+        <button id="nextBtn" class="btn primary" style="display:none;">
+          Siguiente Caso <span class="material-icons">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .mystery-box {
+      background: linear-gradient(135deg, var(--card-bg), rgba(var(--primary-rgb), 0.05));
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(var(--primary-rgb), 0.2);
+    }
+
+    .mystery-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .clues-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .clue-item {
+      background: var(--card-bg);
+      border-left: 4px solid var(--primary);
+      padding: 12px;
+      border-radius: 6px;
+      animation: slideIn 0.4s ease-out;
+    }
+
+    .clue-item::before {
+      content: '💡 ';
+      margin-right: 8px;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .clue-counter {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: center;
+      padding: 8px;
+      background: rgba(var(--primary-rgb), 0.1);
+      border-radius: 6px;
+    }
+
+    .detective-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .guess-section {
+      background: rgba(var(--primary-rgb), 0.1);
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .guess-input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid var(--primary);
+      border-radius: 6px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .guess-input:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(var(--primary-rgb), 0.5);
+    }
+
+    @media (max-width: 600px) {
+      .detective-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <!-- Modal de Instrucciones -->
+  <div id="modal-instrucciones" class="modal-instrucciones">
+    <div class="modal-instrucciones-content">
+      <div class="modal-header-close">
+        <button id="cerrar-modal" title="Cerrar">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/detective-biblico.js"></script>
+  <script src="../js/app.js"></script>
+  <!-- Al final del body, después de todos los scripts del juego -->
+  <script src="../js/instrucciones-modal.js"></script>
+</body>
+</html>
