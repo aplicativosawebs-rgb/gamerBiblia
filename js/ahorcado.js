@@ -18,7 +18,7 @@
     },
     {
       word: "MIZPA",
-      hint: "Es un lugar recurrente en el Antiguo Testamento para reuniones, pactos y momentos de decisión; Samuel convocó allí al pueblo en una ocasión importante."
+      hint: "Es un lugar recurrente en el Antiguo Testamento para reuniones, pactos y momentos de decisión."
     },
     {
       word: "PENINA",
@@ -57,13 +57,133 @@
       hint: "Lideró parte del retorno desde el exilio y aparece junto al sumo sacerdote Josué como figura central de la reconstrucción del templo."
     },
     {
-      word: "MALQUIAS",
+      word: "MALAQUIAS",
       hint: "Su libro presenta una serie de discusiones entre Dios y el pueblo sobre culto, infidelidad y la aparente falta de recompensa por servirle."
     },
     {
       word: "SARDIS",
       hint: "Una de las siete iglesias de Apocalipsis recibe la advertencia de que su reputación parecía viva, pero la realidad espiritual era muy distinta."
-    }
+    },
+    {
+    word: "NICODEMO",
+    hint: "Un líder fariseo  ayudó a preparar el cuerpo de jesús para la sepultura."
+  },
+  {
+    word: "MADIÁN",
+    hint: "Región desértica donde Moisés se refugió tras huir de Egipto."
+  },
+  {
+    word: "BARSABÁS",
+    hint: "Fue propuesto para ocupar el lugar de Judas entre los doce apóstoles."
+  },
+  {
+    word: "BEREA",
+    hint: "Ciudad macedonia cuyos habitantes fueron elogiados en Hechos por recibir la palabra con solicitud y escudriñar diariamente las Escrituras."
+  },
+  {
+    word: "LIDIA",
+    hint: "Comerciante de púrpura en la ciudad de Filipos que abrió su corazón al mensaje de Pablo y hospedó a los misioneros en su casa."
+  },
+  {
+    word: "HABACUC",
+    hint: "Libro profético que plantea preguntas directas a Dios sobre la justicia y la violencia."
+  },
+  {
+    word: "TABITA",
+    hint: "Discípula de Jope. Pedro la resucitó rodeado de viudas."
+  },
+  {
+    word: "BETEL",
+    hint: "Lugar cuyo nombre significa 'casa de Dios'."
+  },
+  {
+    word: "ARAM",
+    hint: "Nombre bíblico asociado con la región de Siria y con los descendientes de Sem."
+  },
+  {
+    word: "CORINTO",
+    hint: "Importante ciudad portuaria y comercial a la que Pablo dirigió dos de sus cartas más extensas para abordar divisiones, orden en la iglesia y el amor."
+  },
+  {
+    word: "ABNER",
+    hint: "General del ejército de Saúl que luego apoyó a David."
+  },
+  {
+    word: "ANTIOQUIA",
+    hint: "Ciudad donde a los discípulos se les llamó cristianos por primera vez."
+  },
+  {
+    word: "ESDRAS",
+    hint: "Escriba que lideró la restauración de la Ley tras el exilio."
+  },
+  {
+    word: "GABAÓN",
+    hint: "Lugar donde el sol se detuvo durante la batalla."
+  },
+  {
+    word: "LISTRA",
+    hint: "Ciudad donde Pablo fue apedreado y milagrosamente sobrevivió."
+  },
+  {
+    word: "NAUM",
+    hint: "Libro profético que anuncia la caída de Nínive."
+  },
+  {
+    word: "OBED",
+    hint: "Hijo de Booz y Rut, y abuelo del rey David."
+  },
+  {
+    word: "QUERIT",
+    hint: "Arroyo donde Elías fue alimentado por cuervos."
+  },
+  {
+    word: "SILOÉ",
+    hint: "Estanque donde el ciego se lavó para recobrar la vista."
+  },
+  {
+    word: "TARSIS",
+    hint: "Ciudad hacia la que Jonás intentó huir en barco."
+  },
+  {
+    word: "UR",
+    hint: "Ciudad caldea de la que salió Abraham."
+  },
+  {
+    word: "VASTI",
+    hint: "Reina destituida por desobedecer la orden del rey Asuero."
+  },
+  {
+    word: "ZACARIAS",
+    hint: "Padre de Juan el Bautista que quedó mudo por dudar del ángel."
+  },
+  {
+    word: "GETSEMANÍ",
+    hint: "Huerto donde Jesús oró antes de ser arrestado."
+  },
+  {
+    word: "BERNABÉ",
+    hint: "Compañero de viajes de Pablo conocido como hijo de consolación."
+  },
+  {
+    word: "EFRAÍN",
+    hint: "Segundo hijo de José que recibió la bendición principal de Jacob."
+  },
+  {
+    word: "MAGDALA",
+    hint: "Pueblo de origen de María, una de las seguidoras de Jesús."
+  },
+  {
+    word: "NABOT",
+    hint: "Hombre que no quiso vender su viña al rey Acab."
+  },
+  {
+    word: "OLIVOS",
+    hint: "Monte desde el cual Jesús ascendió al cielo."
+  },
+  {
+    word: "CILICIA",
+    hint: "Provincia romana de donde era originario Saulo de Tarso."
+  }
   ];
 
   const TOTAL_WORDS = 5;

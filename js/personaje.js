@@ -1,186 +1,500 @@
 const QUESTIONS = [
   {
     pistas: [
-      "En su juventud fue llevado a una posición de servicio dentro de la corte, aunque su origen no estaba ligado a la nobleza.",
-      "Enfrentó varias pruebas relacionadas con la fidelidad a Dios mientras vivía dentro de una cultura extranjera y altamente politizada.",
-      "Una de sus experiencias más conocidas comenzó cuando rechazó una práctica alimentaria impuesta y terminó recibiendo sabiduría para interpretar sueños."
+      "Su primer examen de fidelidad consistió en rechazar la comida del rey.",
+      "Le cambiaron el nombre al entrar a la corte.",
+      "Llegó a ser el tercer señor en el reino tras leer un mensaje al rey."
     ],
     opciones: ["Daniel", "José", "Esdras", "Mardoqueo"],
     correcta: "Daniel"
   },
   {
     pistas: [
-      "Su llamado estuvo acompañado por una experiencia en la que Dios lo confrontó mientras realizaba una tarea cotidiana.",
-      "Durante años condujo a un pueblo en el que las quejas, la desobediencia y la necesidad de intercesión fueron constantes.",
-      "En una etapa crítica recibió la Ley en un contexto de pacto, y más adelante su propio error le impidió entrar en la tierra prometida."
+      "Su suegro  le aconsejó delegar la carga de juzgar al pueblo.",
+      "Se quitó el calzado ante una zarza.",
+      "Golpeó la peña."
     ],
     opciones: ["Moisés", "Josué", "Samuel", "Eli"],
     correcta: "Moisés"
   },
   {
     pistas: [
-      "Antes de ocupar el trono tuvo que aprender a vivir bajo la persecución de una autoridad que sabía que perdería el reino.",
-      "En más de una ocasión rechazó la oportunidad de eliminar a quien lo perseguía, apelando a un principio sobre la autoridad establecida por Dios.",
-      "Su reinado terminó marcado por un episodio en el que decidió realizar un censo y luego reconoció públicamente su pecado."
+      "Le cortó discretamente el borde del manto al rey.",
+      "Puso  a prueba al rey al no matarlo cuando lo tuvo a su merced.",
+      "Tuvó que huir de Jerusalén descalzo y llorando por la rebelión de su propio hijo."
     ],
     opciones: ["David", "Saúl", "Salomón", "Ezequías"],
     correcta: "David"
   },
   {
     pistas: [
-      "Su historia está relacionada con un nacimiento muy esperado y con una experiencia de revelación ocurrida durante su servicio en el santuario.",
-      "Posteriormente tuvo que comunicar un juicio a una familia sacerdotal que hasta entonces había ejercido una posición de autoridad.",
-      "Fue quien ungió primero a un rey que después sería rechazado y, más tarde, al joven que acabaría ocupando su lugar."
+      "Se crió vistiendo un efod de lino confeccionado año a año por su madre.",
+      "Informó la ruina inminente de la casa del sacerdote que lo instruía.",
+      "Estableció la piedra Ében-ezer tras una victoria contra los filisteos."
     ],
     opciones: ["Samuel", "Natán", "Elías", "Esdras"],
     correcta: "Samuel"
   },
   {
     pistas: [
-      "Su ascenso al liderazgo ocurrió después de una etapa en la que estaba escondido mientras Israel sufría una fuerte presión militar.",
-      "Pidió señales concretas para confirmar la misión que había recibido y luego redujo deliberadamente su ejército.",
-      "Después de la victoria, una de sus decisiones religiosas se convirtió en un problema para generaciones posteriores."
+      "Destruyó el altar de Baal de su padre durante la noche.",
+      "Puso un vellón de lana en la era para pedir una señal.",
+      "Fabrico un efod de oro que terminó siendo tropiezo para su casa."
     ],
     opciones: ["Gedeón", "Sansón", "Barac", "Jefté"],
     correcta: "Gedeón"
   },
   {
     pistas: [
-      "Ejerció liderazgo en una época en la que la autoridad política y la vida espiritual de Israel estaban estrechamente conectadas.",
-      "No dirigió personalmente la campaña militar decisiva, pero su presencia fue esencial para que un comandante aceptara entrar en batalla.",
-      "Una mujer de otra tribu terminó protagonizando el desenlace de la batalla que su profecía había anunciado."
+      "Juzgaba a Israel sentada debajo de una palmera entre Ramá y Betel.",
+      "Se negó a ir a la batalla a menos que un comandante fuera con ella.",
+      "Profetizó que el rey de Siria caería en manos de una mujer."
     ],
     opciones: ["Débora", "Hulda", "Ana", "Abigail"],
     correcta: "Débora"
   },
   {
     pistas: [
-      "Su ministerio estuvo marcado por una confrontación directa con una política religiosa promovida desde el palacio.",
-      "En una escena pública hizo que una multitud presenciara un desafío relacionado con el altar y con la identidad del Dios verdadero.",
-      "Después de su etapa de mayor exposición, atravesó un periodo de temor y aislamiento antes de recibir una nueva orientación."
+      "Fue alimentado por cuervos junto al arroyo de Querit.",
+      "Mandó derramar  agua sobre un sacrificio.",
+      "Corrió delante del carro del rey hasta la entrada de Jezreel."
     ],
     opciones: ["Elías", "Eliseo", "Amós", "Miqueas"],
     correcta: "Elías"
   },
   {
     pistas: [
-      "Recibió una porción especial del legado espiritual de su maestro, pero tuvo que demostrar que permanecería fiel después de su partida.",
-      "Uno de sus milagros ocurrió cuando una deuda amenazaba el futuro de una familia y el recurso disponible parecía insuficiente.",
-      "También confrontó a un comandante extranjero cuya sanidad dependía de obedecer una instrucción que él consideraba demasiado sencilla."
+      "Hizo flotar el hierro de un hacha caída al agua.",
+      "Multiplicó el aceite de una viuda al pedirle vasijas prestadas a sus vecinos.",
+      "Envió a su criado  con su báculo para restablecer a un niño."
     ],
     opciones: ["Eliseo", "Isaías", "Jeremías", "Zacarías"],
     correcta: "Eliseo"
   },
   {
     pistas: [
-      "Su reinado quedó asociado a una reforma religiosa profunda después de encontrarse un documento que había sido descuidado durante años.",
-      "Consultó a una profetisa para confirmar las consecuencias espirituales de aquello que se había descubierto.",
-      "Durante su gobierno se celebró una Pascua destacada por una dimensión de restauración que no se había visto desde mucho tiempo atrás."
+      "Comenzó su reinado a los ocho años tras el asesinato de su padre.",
+      "Rompió sus vestidos cuando un escriba le leyó el libro hallado en el templo.",
+      "Inquirió a la profetisa Hulda para consultar las palabras del libro descubierto."
     ],
     opciones: ["Josías", "Ezequías", "Asa", "Josafat"],
     correcta: "Josías"
   },
   {
     pistas: [
-      "Su historia comienza con una crisis nacional que no podía resolverse únicamente mediante recursos económicos o militares.",
-      "Antes de actuar inspeccionó la situación personalmente y después organizó el trabajo por familias y sectores.",
-      "Además de reconstruir estructuras, tuvo que enfrentar oposición externa y problemas internos relacionados con abusos económicos."
+      "Ejercía el cargo de copero.",
+      "Oró en secreto antes de responder la pregunta del soberano.",
+      "Reparó las puertas del muro."
     ],
     opciones: ["Nehemías", "Zorobabel", "Esdras", "Jeremías"],
     correcta: "Nehemías"
   },
   {
     pistas: [
-      "Su papel fue el de un maestro de la Ley que regresó a Jerusalén con autorización oficial de un imperio extranjero.",
-      "Su influencia no se limitó a explicar normas: también confrontó prácticas familiares que comprometían la identidad del pueblo.",
-      "En una jornada pública de lectura, la comunidad escuchó la Ley y respondió con llanto antes de recibir una exhortación a celebrar."
+      "Preparó su corazón para inquirir, cumplir y enseñar la ley de Jehová.",
+      "Llegó a Jerusalén el primer día del quinto mes desde Babilonia.",
+      "Leyó el libro de la ley desde la mañana hasta el mediodía sobre un púlpito de madera."
     ],
     opciones: ["Esdras", "Nehemías", "Hageo", "Malaquías"],
     correcta: "Esdras"
   },
   {
     pistas: [
-      "Su nombre de origen no es el nombre por el que llegó a ser conocida públicamente.",
-      "Llegó a una posición de influencia en un ambiente cortesano sin revelar inicialmente su procedencia.",
-      "Una amenaza contra su pueblo la obligó a decidir entre guardar silencio o presentarse ante una autoridad cuya audiencia podía poner su propia vida en riesgo."
+      "Su otro nombre era Hadasa.",
+      "Permaneció doce meses bajo preparativos y perfumes antes de ver al rey.",
+      "Invito al rey y a su ministro a dos banquetes privados consecutivos."
     ],
     opciones: ["Ester", "Rut", "Abigail", "Hulda"],
     correcta: "Ester"
   },
   {
     pistas: [
-      "Su historia comienza cuando quedó viuda y eligió acompañar a una mujer de otra nación en lugar de regresar a la estabilidad de su propio pueblo.",
-      "Su incorporación a una nueva comunidad comenzó con un trabajo humilde que la puso en contacto con un pariente del esposo fallecido.",
-      "Una norma familiar sobre rescate y parentesco terminó convirtiendo su historia en parte del linaje del rey David."
+      "Su suegra le pidió que cambiara su nombre  tras quedar viuda.",
+      "Recogía espigas tras los segadores en el campo de un pariente.",
+      "Se acostó a los pies de su pariente redentor en la era durante la noche."
     ],
     opciones: ["Rut", "Tamar", "Ester", "Rahab"],
     correcta: "Rut"
   },
   {
     pistas: [
-      "Su conocimiento del funcionamiento de una corte extranjera se volvió determinante cuando recibió información relacionada con una amenaza contra su pueblo.",
-      "Aunque no era el principal protagonista político al comienzo del relato, su negativa a realizar un acto de honra impuesto desencadenó una crisis.",
-      "Terminó relacionado con una celebración que quedó incorporada a la memoria del pueblo como una conmemoración anual."
+      "Descubrió una conspiración de dos eunucos contra la vida del rey.",
+      "Se vestía de cilicio y ceniza junto a la puerta del rey.",
+      "El rey ordenó pasearlo a caballo por la plaza con ropa real."
     ],
     opciones: ["Mardoqueo", "Nehemías", "Daniel", "Zorobabel"],
     correcta: "Mardoqueo"
   },
   {
     pistas: [
-      "Su vida estuvo ligada a una promesa que parecía incompatible con las circunstancias familiares que la rodeaban.",
-      "En una escena decisiva fue llevado a un lugar de sacrificio sin conocer inicialmente cómo terminaría la prueba.",
-      "Más adelante aparece ligado a decisiones matrimoniales y familiares que preservan la continuidad de la promesa recibida por su padre."
+      "Nació cuando su madre tenía noventa años de edad.",
+      "Cargó la leña sobre sus espaldas camino al monte.",
+      "Salió a meditar al campo a la hora de la tarde cuando vio venir a su prometida."
     ],
     opciones: ["Isaac", "Jacob", "Ismael", "José"],
     correcta: "Isaac"
   },
   {
     pistas: [
-      "Su historia incluye un cambio de identidad que ocurre después de una noche marcada por una lucha y una bendición.",
-      "Tuvo que abandonar temporalmente su hogar después de una rivalidad familiar que involucró una bendición y un engaño.",
-      "Sus doce hijos se convirtieron en el punto de partida de una organización tribal que definió la identidad de Israel."
+      "Usó pieles de cabrito en las manos.",
+      "Puso ramas descortezadas frente a los abrevaderos del ganado.",
+      "Cojeaba de su muslo tras luchar en Peniel."
     ],
     opciones: ["Jacob", "Esaú", "José", "Isaac"],
     correcta: "Jacob"
   },
   {
     pistas: [
-      "Fue vendido por sus propios hermanos y pasó por varias posiciones sociales antes de entrar en una estructura de poder extranjera.",
-      "Su capacidad para interpretar sueños no era presentada como un talento aislado, sino como algo que atribuía directamente a Dios.",
-      "Terminó utilizando su autoridad para conservar la vida de su propia familia durante una crisis alimentaria."
+      "Recibió una túnica de diversos colores confeccionada por su padre.",
+      "Sufrió una acusación falsa tras dejar su ropa en manos de la esposa de Potifar.",
+      "Uso una copa de plata escondida en un costal para poner a prueba a sus hermanos."
     ],
     opciones: ["José", "Daniel", "Moisés", "Booz"],
     correcta: "José"
   },
   {
     pistas: [
-      "Su reinado se hizo famoso por la sabiduría, pero varios relatos muestran que esa misma etapa estuvo acompañada de decisiones económicas y políticas costosas.",
-      "Construyó una obra central para el culto de Israel y recibió una visión nocturna en la que Dios le ofreció una petición especial.",
-      "Uno de sus primeros juicios conocidos consistió en resolver un conflicto entre dos mujeres mediante una propuesta que revelara la verdadera reacción de una de ellas."
+      "Envió naves a Ofer para traer cuatrocientos veinte talentos de oro.",
+      "Resolvió el pleito de dos mujeres.",
+      "Su corazón se desvió tras los dioses de sus esposas en su vejez."
     ],
     opciones: ["Salomón", "David", "Ezequías", "Roboam"],
     correcta: "Salomón"
   },
   {
     pistas: [
-      "Su ministerio comenzó con hostilidad hacia los seguidores de Jesús y con autorización para perseguirlos fuera de Jerusalén.",
-      "Una experiencia ocurrida durante un viaje cambió completamente la dirección de su vida y su manera de anunciar el evangelio.",
-      "En sus cartas aborda asuntos como la libertad cristiana, los conflictos comunitarios, la resurrección y la relación entre fe y obras de amor."
+      "Estuvo presente apoyando la muerte de Esteban guardando las ropas.",
+      "Pasó tres días en Damasco sin ver, comer ni beber.",
+      "Escapó de la ciudad dentro de una canasta bajada por el muro."
     ],
     opciones: ["Pablo", "Pedro", "Bernabé", "Apolo"],
     correcta: "Pablo"
   },
   {
     pistas: [
-      "Su liderazgo apostólico fue puesto a prueba cuando una visión le obligó a reconsiderar a quién podía recibir la comunidad cristiana.",
-      "Visitó la casa de un oficial romano y allí comprendió de manera práctica una verdad que antes había expresado con dificultad.",
-      "En una etapa posterior tuvo que explicar su conducta ante otros creyentes que cuestionaban haber entrado en una casa de gentiles."
+      "Cortó la oreja derecha de un siervo del Sumo Sacerdote.",
+      "Salió fuera a llorar amargamente tras el canto del gallo.",
+      "Fue liberado de la cárcel por un ángel y fue a casa de María, madre de Marcos."
     ],
     opciones: ["Pedro", "Pablo", "Felipe", "Esteban"],
     correcta: "Pedro"
+  },
+  {
+    pistas: [
+      "Iba año tras año a Silo y soportaba las burlas.",
+      "Su esposo le daba el doble por cuanto la amaba.",
+      "Llevó una túnica pequeña a su hijo cada año."
+    ],
+    opciones: ["Ana", "María", "Sarra", "Isabel"],
+    correcta: "Ana"
+  },
+  {
+    pistas: [
+      "Era general del ejército del rey.",
+      "Una muchacha cautiva israelita sugirió la solución a su afección.",
+      "Llevó diez talentos de plata y seis mil piezas de oro al viaje."
+    ],
+    opciones: ["Naamán", "Cornelio", "Ciro", "Dario"],
+    correcta: "Naamán"
+  },
+  {
+    pistas: [
+      "Pagó su pasaje en un barco.",
+      "Dormía profundamente en la bodega de la nave durante la tempestad.",
+      "Se sentó al oriente de la ciudad a la sombra de una calabacera."
+    ],
+    opciones: ["Jonás", "Amós", "Oseas", "Nahúm"],
+    correcta: "Jonás"
+  },
+  {
+    pistas: [
+      "Jefe de los publicanos y hombre rico de Jericó.",
+      "Tuvo que subir a un árbol.",
+      "Prometió dar la mitad de sus bienes a los pobres."
+    ],
+    opciones: ["Zaqueo", "Mateo", "Nicodemo", "Bartimeo"],
+    correcta: "Zaqueo"
+  },
+  {
+    pistas: [
+      "Mató a un león con sus manos en las viñas de Timnat.",
+      "Propuso un enigma sobre comer y dulzura tras encontrar miel.",
+      "Ató trescientas zorras por la cola con antorchas para quemar sembrados."
+    ],
+    opciones: ["Sansón", "Gedeón", "Jefté", "Saúl"],
+    correcta: "Sansón"
+  },
+  {
+    pistas: [
+      "Llegó de noche a conversar con Jesús.",
+      "Preguntó sobre el nuevo nacimiento.",
+      "Trajo cien libras de una mezcla de mirra y áloes para el sepulcro."
+    ],
+    opciones: ["Nicodemo", "Gamaliel", "José de Arimatea", "Nathanael"],
+    correcta: "Nicodemo"
+  },
+  {
+    pistas: [
+      "Ató un cordón de grana en su ventana como señal acordada.",
+      "Recibió a los espías de Israel y los escondió con manojos de lino en el terrado.",
+      "Su casa estaba construida sobre el muro mismo de la ciudad."
+    ],
+    opciones: ["Rahab", "Rut", "Débora", "Lidia"],
+    correcta: "Rahab"
+  },
+  {
+    pistas: [
+      "Vendedora de púrpura originaria de la ciudad de Tiatira.",
+      "Escuchó la predicación junto al río en Filipos un día de reposo.",
+      "Insistió en hospedar a Pablo en su casa tras ser bautizada."
+    ],
+    opciones: ["Lidia", "Priscila", "Febe", "Marta"],
+    correcta: "Lidia"
+  },
+  {
+    pistas: [
+      "Levita natural de Chipre que vendió una heredad y trajo el dinero.",
+      "Fue a Tarso a buscar a Pablo para llevarlo a Antioquía.",
+      "Tuvo un desacuerdo sobre llevar a Juan Marcos en un segundo viaje."
+    ],
+    opciones: ["Bernabé", "Apolo", "Silas", "Timoteo"],
+    correcta: "Bernabé"
+  },
+  {
+    pistas: [
+      "Centurión de la compañía llamada la Italiana.",
+      "Oraba a Dios continuamente y hacía muchas limosnas al pueblo.",
+      "Envió a dos de sus criados y a un piadoso soldado a Jope."
+    ],
+    opciones: ["Cornelio", "Naamán", "Julio", "Félix"],
+    correcta: "Cornelio"
+  },
+  {
+    pistas: [
+      "Compró un heredad en Anatot a su primo por diecisiete siclos de plata.",
+      "Dictó las palabras de las profecías a su escriba Baruc.",
+      "Fue echado en la cisterna de Malquías donde se hundió en el cieno."
+    ],
+    opciones: ["Jeremías", "Isaías", "Ezequiel", "Daniel"],
+    correcta: "Jeremías"
+  },
+  {
+    pistas: [
+      "Recibió la instrucción de Dios de tomar una esposa.",
+      "Llamó a sus hijos Lo-ruhama y Lo-ammi por orden divina.",
+      "Compró de nuevo a su esposa por quince piezas de plata y un cabo de cebada."
+    ],
+    opciones: ["Oseas", "Amós", "Miqueas", "Malaquías"],
+    correcta: "Oseas"
+  },
+  {
+    pistas: [
+      "Era boyero y recogedor de higos silvestres.",
+      "Tuvo un enfrentamiento directo con Amasías.",
+      "No era profeta ni hijo de profeta antes de su llamado."
+    ],
+    opciones: ["Amós", "Habacuc", "Joel", "Sofonías"],
+    correcta: "Amós"
+  },
+  {
+    pistas: [
+      "Tenía dos hijos que ejercían el sacerdocio.",
+      "Juzgó a Israel durante cuarenta años sentado en una silla junto al templo.",
+      "Cayó de la silla hacia atrás al saber del arca y se desnucó."
+    ],
+    opciones: ["Elí", "Samuel", "Aarón", "Zacarías"],
+    correcta: "Elí"
+  },
+  {
+    pistas: [
+      "Un serafín tocó sus labios con un carbón encendido tomado del altar.",
+      "Tuvo su visión en el año que murió el rey Uzías.",
+      "Profetizó sobre una virgen que daría a luz un hijo llamado Emanuel."
+    ],
+    opciones: ["Isaías", "Jeremías", "Ezequiel", "Zacarías"],
+    correcta: "Isaías"
+  },
+  {
+    pistas: [
+      "Viajó con un gran séquito de camellos cargados de especias y oro.",
+      "Llegó a probar a un rey mediante preguntas difíciles o enigmas.",
+      "Regaló ciento veinte talentos de oro e inmensa cantidad de aromas."
+    ],
+    opciones: ["Reina de Sabá", "Princesa Vasti", "Atalía de Judá", "Candace"],
+    correcta: "Reina de Sabá"
+  },
+  {
+    pistas: [
+      "Fue uno de los siete varones escogidos para atender las mesas.",
+      "Su rostro parecía el de un ángel.",
+      "Vio los cielos abiertos y al Hijo del Hombre a la diestra de Dios."
+    ],
+    opciones: ["Esteban", "Felipe", "Timoteo", "Santiago"],
+    correcta: "Esteban"
+  },
+  {
+    pistas: [
+      "Hijo de Timeo, mendigaba sentado junto al camino.",
+      "Gritaba: '¡Hijo de David, ten misericordia de mí!'.",
+      "Arrojó su capa, dio un salto y vino a Jesús."
+    ],
+    opciones: ["Bartimeo", "Lázaro", "Zaqueo", "Malco"],
+    correcta: "Bartimeo"
+  },
+  {
+    pistas: [
+      "Hijo de Eunice y nieto de Loida.",
+      "Acompañó a Pablo desde Listra habiendo sido circuncidado.",
+      "Padecía de frecuentes enfermedades estomacales según una carta epistolar."
+    ],
+    opciones: ["Timoteo", "Tito", "Apolo", "Lucas"],
+    correcta: "Timoteo"
+  },
+  {
+    pistas: [
+      "Varón elocuente y poderoso en las Escrituras, nacido en Alejandría.",
+      "Predicaba fervientemente en Efeso conociendo solo el bautismo de Juan.",
+      "Fue instruido con más exactitud por el matrimonio de Aquila y Priscila."
+    ],
+    opciones: ["Apolo", "Pablo", "Esteban", "Cefas"],
+    correcta: "Apolo"
+  },
+  {
+    pistas: [
+      "Estaba descansando debajo de una higuera antes de que lo invitaran a conocer al maestro.",
+      "Cuestionó inicialmente si de una ciudad pequeña y humilde podía salir algo bueno.",
+      "Se sorprendió al escuchar que lo conocían y lo describieron como un hombre sin engaño."
+    ],
+    opciones: ["Natanael", "Felipe", "Tomás", "Andrés"],
+    correcta: "Natanael"
+  },
+  {
+    pistas: [
+      "Vivía en el desierto vistiendo ropa de pelo de camello y un cinto de cuero.",
+      "Su alimentación diaria se basaba en langostas y miel silvestre.",
+      "Se negó inicialmente a bautizar al maestro alegando que él necesitaba ser bautizado por él."
+    ],
+    opciones: ["Juan el Bautista", "Elías", "Amós", "Santiago"],
+    correcta: "Juan el Bautista"
+  },
+  {
+    pistas: [
+      "Un rey impío ordenó apresarlo para ejecutarlo después de la fiesta de los panes sin levadura.",
+      "Quedó encadenado entre dos soldados mientras la comunidad oraba sin cesar por él.",
+      "Pensaba que estaba viviendo una visión hasta que se vio solo en medio de la calle."
+    ],
+    opciones: ["Pedro", "Santiago", "Juan", "Pablo"],
+    correcta: "Pedro"
+  },
+  {
+    pistas: [
+      "Era una mujer respetada por la comunidad por confeccionar vestidos y túnicas para las viudas.",
+      "Falleció en una ciudad costera y sus ropas tejidas fueron mostradas con tristeza.",
+      "Su otro nombre traducido significaba Dorcas."
+    ],
+    opciones: ["Tabita", "Lidia", "Priscila", "Febe"],
+    correcta: "Tabita"
+  },
+  {
+    pistas: [
+      "Acompañó a su esposo en el oficio de fabricar tiendas de campaña.",
+      "Alojó en su casa a un gran orador de Alejandría para explicarle con más exactitud el camino.",
+      "Es mencionada junto a su cónyuge como colaboradora clave en varias comunidades."
+    ],
+    opciones: ["Priscila", "Febe", "Lidia", "Sintique"],
+    correcta: "Priscila"
+  },
+  {
+    pistas: [
+      "Era un siervo fugitivo que había abandonado a su dueño en la provincia de Asia.",
+      "Conoció al maestro de las cartas mientras este se encontraba bajo custodia.",
+      "Regresó a su antiguo hogar llevando consigo una carta que pedía recibirlo como a un hermano."
+    ],
+    opciones: ["Onésimo", "Epafrodito", "Tíquico", "Arquipo"],
+    correcta: "Onésimo"
+  },
+  {
+    pistas: [
+      "Viajó miles de kilómetros para llevar una ayuda económica y servir a un prisionero.",
+      "Enfermó gravemente al borde de la muerte durante su travesía de servicio.",
+      "Fue enviado de regreso con una carta para tranquilizar a la comunidad que sufría por su salud."
+    ],
+    opciones: ["Epafrodito", "Onésimo", "Gayo", "Epafras"],
+    correcta: "Epafrodito"
+  },
+  {
+    pistas: [
+      "Tuvo un hermano menor que compró su primogenitura por un plato de guisado rojo.",
+      "Era un hábil cazador y el hijo preferido de su padre por la caza que traía.",
+      "Salió a recibir a su hermano con cuatrocientos hombres tras años de distanciamiento."
+    ],
+    opciones: ["Esaú", "Laban", "Ismael", "Rubén"],
+    correcta: "Esaú"
+  },
+  {
+    pistas: [
+      "Su padre decidió ofrecerlo como rey cuando era joven mientras buscaba unas asnas perdidas.",
+      "Destacaba entre los demás por ser tan alto que sobresalía de hombros arriba.",
+      "Consultó a una adivina en una noche de desesperación antes de su última batalla."
+    ],
+    opciones: ["Saúl", "Abner", "Jonatán", "Jeroboam"],
+    correcta: "Saúl"
+  },
+  {
+    pistas: [
+      "Se quedó dormido en una ventana durante un discurso prolijo que duró hasta la medianoche.",
+      "Cayó desde un tercer piso debido al sueño y fue levantado muerto.",
+      "Fue abrazado por el predicador, quien calmó a la multitud diciendo que su vida estaba en él."
+    ],
+    opciones: ["Eutico", "Tíquico", "Sostenes", "Crispo"],
+    correcta: "Eutico"
+  },
+  {
+    pistas: [
+      "Iba de regreso a su país natal en África leyendo sentado en su carro de combate.",
+      "Iba leyendo un pasaje del profeta que hablaba de una oveja llevada al matadero.",
+      "Pidió ser bautizado inmediatamente al ver un depósito de agua en el camino."
+    ],
+    opciones: ["El eunuco etíope", "Cornelio", "Manaén", "Simeón el Níger"],
+    correcta: "El eunuco etíope"
+  },
+  {
+    pistas: [
+      "Obligado por los soldados romanos a llevar una cruz ajena camino al lugar del suplicio.",
+      "Venía de trabajar en el campo cuando lo interceptó la multitud.",
+      "Era oriundo del norte de África y padre de Alejandro y Rufo."
+    ],
+    opciones: ["Simón de Cirene", "José de Arimatea", "Cleofás", "Tadeo"],
+    correcta: "Simón de Cirene"
+  },
+  {
+    pistas: [
+      "Fue llamado por su nombre divino para diseñar y construir los artefactos del tabernáculo.",
+      "Lleno del Espíritu de Dios con sabiduría para trabajar en oro, plata, bronce y tallado de piedras.",
+      "Pertenecía a la tribu de Judá y trabajó en equipo junto a Oholiab."
+    ],
+    opciones: ["Bezaleel", "Hiram", "Serafías", "Zorobabel"],
+    correcta: "Bezaleel"
+  },
+  {
+    pistas: [
+      "Era un hombre piadoso a quien se le reveló que no moriría sin ver al enviado del Señor.",
+      "Tomó al niño en sus brazos dentro del templo y bendijo a Dios.",
+      "Expresó en su oración que ya podía partir en paz porque sus ojos habían visto la salvación."
+    ],
+    opciones: ["Simeón", "Zacarías", "Gamaliel", "Nicodemo"],
+    correcta: "Simeón"
+  },
+  {
+    pistas: [
+      "Iba de camino a una aldea distante a unos sesenta estadios de la capital.",
+      "Caminaba triste conversando con otro acompañante sobre los hechos ocurridos en la ciudad.",
+      "No reconoció al maestro en el trayecto sino hasta el momento de partir el pan en la mesa."
+    ],
+    opciones: ["Cleofás", "Tómas", "Ananías", "Sostenes"],
+    correcta: "Cleofás"
   }
 ];
-
 (function () {
  const TOTAL_QUESTIONS = 5;
   let current = 0;
