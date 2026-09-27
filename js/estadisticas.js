@@ -14,7 +14,7 @@
     const completed = Storage.getCompletedCount();
 
     document.getElementById('totalScore').textContent = total;
-    document.getElementById('completedCount').textContent = completed + '/6';
+    document.getElementById('completedCount').textContent = completed + '/9';
     document.getElementById('avgScore').textContent =
       completed > 0 ? Math.round(total / completed) : 0;
 
