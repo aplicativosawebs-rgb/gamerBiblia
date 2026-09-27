@@ -5,6 +5,18 @@
       hint: "Aparece de forma breve en Génesis, pero siglos después David y Hebreos lo convierten en una figura clave para explicar un sacerdocio distinto al levítico."
     },
     {
+      word: "NATHANAEL",
+      hint: "Cuestionó inicialmente si de una ciudad pequeña y humilde podía salir algo bueno."
+    },
+    {
+      word: "PRISCILA",
+      hint: "Es mencionada junto a su cónyuge como colaboradora clave en varias comunidades."
+    },
+    {
+      word: "EUTICO",
+      hint: "Cayó desde un tercer piso debido al sueño y fue levantado muerto."
+    },
+    {
       word: "BEZALEEL",
       hint: "Su nombre aparece ligado a una capacidad artística que, según Éxodo, fue concedida para trabajar en los objetos sagrados del tabernáculo."
     },
@@ -42,15 +54,15 @@
     },
     {
       word: "TROAS",
-      hint: "En esta ciudad Pablo tuvo una visión nocturna que orientó su siguiente etapa misionera y, años después, ocurrió allí un accidente relacionado con una reunión nocturna."
+      hint: "En esta ciudad Pablo tuvo una visión nocturna que orientó su siguiente etapa misionera."
     },
     {
       word: "MELITA",
-      hint: "Es la isla donde Pablo y los demás supervivientes de un naufragio pasaron el invierno después de que una serpiente lo mordiera sin producirle el daño esperado."
+      hint: "Es la isla donde Pablo fue mordido por una serpiente sin recibir daño."
     },
     {
       word: "PATMOS",
-      hint: "Una experiencia de exilio o confinamiento en esta isla del mar Egeo quedó vinculada a las visiones que dieron origen al último libro del Nuevo Testamento."
+      hint: "Isla que quedó vinculada a las visiones que dieron origen al último libro del Nuevo Testamento."
     },
     {
       word: "ZOROBABEL",
@@ -62,11 +74,11 @@
     },
     {
       word: "SARDIS",
-      hint: "Una de las siete iglesias de Apocalipsis recibe la advertencia de que su reputación parecía viva, pero la realidad espiritual era muy distinta."
+      hint: "Es mencionada en la carta a la iglesia en Apocalipsis."
     },
     {
     word: "NICODEMO",
-    hint: "Un líder fariseo  ayudó a preparar el cuerpo de jesús para la sepultura."
+    hint: "Un líder fariseo, ayudó a preparar el cuerpo de jesús para la sepultura."
   },
   {
     word: "MADIAN",
@@ -90,7 +102,7 @@
   },
   {
     word: "TABITA",
-    hint: "Discípula de Jope. Pedro la resucitó rodeado de viudas."
+    hint: "Discípula de Jope. Pedro la resucitó."
   },
   {
     word: "BETEL",
