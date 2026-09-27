@@ -69,11 +69,11 @@
     hint: "Un líder fariseo  ayudó a preparar el cuerpo de jesús para la sepultura."
   },
   {
-    word: "MADIÁN",
+    word: "MADIAN",
     hint: "Región desértica donde Moisés se refugió tras huir de Egipto."
   },
   {
-    word: "BARSABÁS",
+    word: "BARSABAS",
     hint: "Fue propuesto para ocupar el lugar de Judas entre los doce apóstoles."
   },
   {
@@ -117,7 +117,7 @@
     hint: "Escriba que lideró la restauración de la Ley tras el exilio."
   },
   {
-    word: "GABAÓN",
+    word: "GABAON",
     hint: "Lugar donde el sol se detuvo durante la batalla."
   },
   {
@@ -137,7 +137,7 @@
     hint: "Arroyo donde Elías fue alimentado por cuervos."
   },
   {
-    word: "SILOÉ",
+    word: "SILOE",
     hint: "Estanque donde el ciego se lavó para recobrar la vista."
   },
   {
@@ -157,15 +157,15 @@
     hint: "Padre de Juan el Bautista que quedó mudo por dudar del ángel."
   },
   {
-    word: "GETSEMANÍ",
+    word: "GETSEMANI",
     hint: "Huerto donde Jesús oró antes de ser arrestado."
   },
   {
-    word: "BERNABÉ",
+    word: "BERNABE",
     hint: "Compañero de viajes de Pablo conocido como hijo de consolación."
   },
   {
-    word: "EFRAÍN",
+    word: "EFRAIN",
     hint: "Segundo hijo de José que recibió la bendición principal de Jacob."
   },
   {
